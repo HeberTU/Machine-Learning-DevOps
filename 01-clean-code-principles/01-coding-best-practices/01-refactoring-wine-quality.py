@@ -35,7 +35,15 @@ def numeric_to_buckets(
         df: pd.DataFrame,
         column: str
 ) -> None:
+    """Transforms numeric column to categorical values.
 
+        Args:
+            df: DataFrame to be modified.
+            column: Column name to be modified.
+
+        Returns:
+            None
+    """
     meadian = df[column].median()
     df[column] = df[column]. \
         apply(
