@@ -47,10 +47,10 @@ def main():
 
     # Approach 3: Sets.
     start_time = time.time()
-    recent_coding_books = set(recent_books).\
+    recent_coding_books = set(recent_books). \
         intersection(
-            set(coding_books)
-        )
+        set(coding_books)
+    )
 
     print(len(recent_coding_books))
 
