@@ -14,16 +14,17 @@ Licence,
 import time
 import numpy as np
 
-with open('./data/gift_costs.txt') as f:
-    gift_costs = f.read().split('\n')
-
-gift_costs = np.array(
-    object=gift_costs,
-    dtype=int
-)
-
 
 def main():
+
+    with open('./data/gift_costs.txt') as f:
+        gift_costs = f.read().split('\n')
+
+    gift_costs = np.array(
+        object=gift_costs,
+        dtype=int
+    )
+
     # Approach 1: Loop Not recommended.
     start_time = time.time()
 

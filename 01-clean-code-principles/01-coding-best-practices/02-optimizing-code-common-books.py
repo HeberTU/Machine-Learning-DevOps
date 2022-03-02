@@ -12,14 +12,15 @@ Licence,
 import time
 import numpy as np
 
-with open('./data/books_published_last_two_years.txt') as f:
-    recent_books = f.read().split('\n')
-
-with open('./data/all_coding_books.txt') as f:
-    coding_books = f.read().split('\n')
-
 
 def main():
+
+    with open('./data/books_published_last_two_years.txt') as f:
+        recent_books = f.read().split('\n')
+
+    with open('./data/all_coding_books.txt') as f:
+        coding_books = f.read().split('\n')
+
     # Approach 1: Loop Not recommended.
     start_time = time.time()
 
