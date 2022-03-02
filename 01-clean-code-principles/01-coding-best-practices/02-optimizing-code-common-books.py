@@ -14,12 +14,19 @@ import numpy as np
 
 
 def main():
+    """Main function"""
 
-    with open('./data/books_published_last_two_years.txt') as f:
-        recent_books = f.read().split('\n')
+    with open(
+            file='./data/books_published_last_two_years.txt',
+            encoding='UTF-8'
+    ) as file:
+        recent_books = file.read().split('\n')
 
-    with open('./data/all_coding_books.txt') as f:
-        coding_books = f.read().split('\n')
+    with open(
+            file='./data/all_coding_books.txt',
+            encoding='UTF-8'
+    ) as file:
+        coding_books = file.read().split('\n')
 
     # Approach 1: Loop Not recommended.
     start_time = time.time()
