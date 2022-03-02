@@ -16,9 +16,13 @@ import numpy as np
 
 
 def main():
+    """Main function"""
 
-    with open('./data/gift_costs.txt') as f:
-        gift_costs = f.read().split('\n')
+    with open(
+            file='./data/gift_costs.txt',
+            encoding='UTF-8'
+    ) as file:
+        gift_costs = file.read().split('\n')
 
     gift_costs = np.array(
         object=gift_costs,
