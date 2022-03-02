@@ -7,6 +7,8 @@ authors = ["Heber Trujillo <heber.trj.urt@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 pandas = "^1.4.1"
+pylint = "^2.12.2"
+autopep8 = "^1.6.0"
 
 [tool.poetry.dev-dependencies]
 
