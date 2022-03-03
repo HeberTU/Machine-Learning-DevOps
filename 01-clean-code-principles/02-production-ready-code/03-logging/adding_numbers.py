@@ -26,12 +26,8 @@ def sum_vals(a: int, b:int) -> int:
         logging.error(msg="ERROR: a and b must have to be integers.")
         return 0
 
-    try:
-        logging.info("SUCCESS: Able to add a and b.")
-        return a + b
-    except TypeError:
-        logging.error(msg="ERROR: a and b must have to be integers.")
-        return 0
+    logging.info("SUCCESS: Able to add a and b.")
+    return a + b
 
 
 if __name__ == "__main__":
