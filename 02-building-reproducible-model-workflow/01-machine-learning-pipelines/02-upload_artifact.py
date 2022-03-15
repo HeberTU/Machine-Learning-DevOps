@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Versioning Data & Artifacts in Weights & Biases.
+"""Upload part of Versioning Data & Artifacts in Weights & Biases.
 
 Created on: 3/15/2022
 @author: Heber Trujillo <heber.trj.urt@gmail.com> 
