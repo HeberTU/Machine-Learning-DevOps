@@ -4,3 +4,6 @@
 /wandb/
 /wandb_test
 /artifacts/
+/02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/mlruns/
+/02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/outputs/
+/.venvw/
