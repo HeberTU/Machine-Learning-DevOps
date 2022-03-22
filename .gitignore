@@ -7,3 +7,8 @@
 /02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/mlruns/
 /02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/outputs/
 /.venvw/
+/02-building-reproducible-model-workflow/02-data-exploration-and-preparation/01-exploratory-data-analysis/.ipynb_checkpoints/
+/02-building-reproducible-model-workflow/01-machine-learning-pipelines/03-ml-pipeline/wandb/
+/02-building-reproducible-model-workflow/02-data-exploration-and-preparation/01-exploratory-data-analysis/wip.py
+/02-building-reproducible-model-workflow/02-data-exploration-and-preparation/01-exploratory-data-analysis/artifacts/
+/02-building-reproducible-model-workflow/02-data-exploration-and-preparation/01-exploratory-data-analysis/wandb/
