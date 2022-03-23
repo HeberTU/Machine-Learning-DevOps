@@ -12,3 +12,6 @@
 /02-building-reproducible-model-workflow/02-data-exploration-and-preparation/01-exploratory-data-analysis/wip.py
 /02-building-reproducible-model-workflow/02-data-exploration-and-preparation/01-exploratory-data-analysis/artifacts/
 /02-building-reproducible-model-workflow/02-data-exploration-and-preparation/01-exploratory-data-analysis/wandb/
+/02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/process_data/wandb/
+/02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/download_data/wandb/
+/mlruns/
