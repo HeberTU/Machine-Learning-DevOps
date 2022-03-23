@@ -15,3 +15,6 @@
 /02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/process_data/wandb/
 /02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/download_data/wandb/
 /mlruns/
+/02-building-reproducible-model-workflow/02-data-exploration-and-preparation/02-clean-preprocess/mlruns/
+/02-building-reproducible-model-workflow/02-data-exploration-and-preparation/02-clean-preprocess/artifacts/
+/02-building-reproducible-model-workflow/02-data-exploration-and-preparation/02-clean-preprocess/wandb/
