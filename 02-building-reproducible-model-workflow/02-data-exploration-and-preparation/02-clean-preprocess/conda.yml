@@ -1,0 +1,9 @@
+name: clean_pre_process
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip=20.3.3
+  - pandas=1.4.1
+  - pip:
+      - wandb==0.10.21
