@@ -5,6 +5,7 @@ Created on: 3/23/2022
 @author: Heber Trujillo <heber.trj.urt@gmail.com> 
 Licence,
 """
+import os
 import argparse
 import logging
 import pandas as pd
@@ -74,13 +75,13 @@ def main(
             type=artifact_type,
             description=artifact_description
         )
-        wandb_table = wandb.Table(data=df)
+        df.to_csv(artifact_name)
 
-        artifact.add(
-            obj=wandb_table,
-            name=artifact_name)
+        artifact.add_file(artifact_name)
 
         run.log_artifact(artifact)
+
+        os.remove(artifact_name)
 
     logger.info(f"INFO: File {artifact_name} logged.")
 
