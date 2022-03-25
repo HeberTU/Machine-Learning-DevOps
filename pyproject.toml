@@ -24,6 +24,7 @@ pandas-profiling = "2.11.0"
 pyarrow = "^7.0.0"
 fastparquet = "^0.8.0"
 scikit-learn = "0.24.1"
+scipy = "1.6.1"
 
 [tool.poetry.dev-dependencies]
 
