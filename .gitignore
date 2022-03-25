@@ -26,3 +26,6 @@
 /02-building-reproducible-model-workflow/03-data-validation/01-deterministic-tests/artifacts/
 /02-building-reproducible-model-workflow/03-data-validation/01-deterministic-tests/mlruns/
 /02-building-reproducible-model-workflow/03-data-validation/01-deterministic-tests/wandb/
+/02-building-reproducible-model-workflow/03-data-validation/02-non-deterministic-tests/artifacts/
+/02-building-reproducible-model-workflow/03-data-validation/02-non-deterministic-tests/mlruns/
+/02-building-reproducible-model-workflow/03-data-validation/02-non-deterministic-tests/wandb/
