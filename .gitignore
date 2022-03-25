@@ -21,3 +21,5 @@
 /02-building-reproducible-model-workflow/02-data-exploration-and-preparation/03-data-segreation/artifacts/
 /02-building-reproducible-model-workflow/02-data-exploration-and-preparation/03-data-segreation/mlruns/
 /02-building-reproducible-model-workflow/02-data-exploration-and-preparation/03-data-segreation/wandb/
+/02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/process_data/artifacts/
+/02-building-reproducible-model-workflow/01-machine-learning-pipelines/04-linking-components/process_data/clean_data.csv
