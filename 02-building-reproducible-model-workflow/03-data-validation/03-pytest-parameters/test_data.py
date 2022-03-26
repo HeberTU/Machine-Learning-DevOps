@@ -1,37 +1,24 @@
 # -*- coding: utf-8 -*-
-"""Non-Deterministic Tests
+"""Non-deterministict tests.
 
-Created on: 3/25/2022
+Created on: 3/26/2022
 @author: Heber Trujillo <heber.trj.urt@gmail.com> 
 Licence,
 """
-import pytest
-import wandb
-import pandas as pd
+from typing import Callable
 import scipy.stats
 
-# This is global so all tests are collected under the same
-# run
-run = wandb.init(project="exercise_8", job_type="data_tests")
 
-
-@pytest.fixture(scope="session")
-def data():
-
-    local_path = run.use_artifact("exercise_6/data_train.csv:latest").file()
-    sample1 = pd.read_csv(local_path)
-
-    local_path = run.use_artifact("exercise_6/data_test.csv:latest").file()
-    sample2 = pd.read_csv(local_path)
-
-    return sample1, sample2
-
-
-def test_kolmogorov_smirnov(data):
+def test_kolmogorov_smirnov(
+        data: Callable,
+        ks_alpha: Callable
+):
+    """Test X's uni-variate distribution"""
 
     sample1, sample2 = data
 
-    numerical_columns = [
+
+    columns = [
         "danceability",
         "energy",
         "loudness",
@@ -44,15 +31,12 @@ def test_kolmogorov_smirnov(data):
         "duration_ms"
     ]
 
-    # Let's decide the Type I error probability (related to the False Positive Rate)
-    alpha = 0.05
     # Bonferroni correction for multiple hypothesis testing
     # (see my blog post on this topic to see where this comes from:
     # https://towardsdatascience.com/precision-and-recall-trade-off-and-multiple-hypothesis-testing-family-wise-error-rate-vs-false-71a85057ca2b)
-    alpha_prime = 1 - (1 - alpha)**(1 / len(numerical_columns))
+    alpha_prime = 1 - (1 - ks_alpha)**(1 / len(columns))
 
-    for col in numerical_columns:
-
+    for col in columns:
 
         ts, p_value = scipy.stats.ks_2samp(
             data1=sample1[col],
@@ -60,6 +44,10 @@ def test_kolmogorov_smirnov(data):
             alternative='two-sided'
         )
 
-        assert p_value>alpha_prime, (f"H0: both samples come from a population "
+        # NOTE: as always, the p-value should be interpreted as the probability of
+        # obtaining a test statistic (TS) equal or more extreme that the one we got
+        # by chance, when the null hypothesis is true. If this probability is not
+        # large enough, this dataset should be looked at carefully, hence we fail
+        assert p_value > alpha_prime, (f"H0: both samples come from a population "
                                      f"with the same distribution - rejected "
                                      f"for {col}")
