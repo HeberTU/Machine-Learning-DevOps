@@ -60,7 +60,6 @@ def test_kolmogorov_smirnov(data):
             alternative='two-sided'
         )
 
-        # Add an assertion so that the test fails if p_value > alpha_prime
         assert p_value>alpha_prime, (f"H0: both samples come from a population "
                                      f"with the same distribution - rejected "
                                      f"for {col}")
