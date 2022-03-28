@@ -18,13 +18,14 @@ requests = "^2.27.1"
 wandb = "0.10.21"
 mlflow = "^1.24.0"
 wheel = "^0.37.1"
-hydra-core = "^1.1.1"
+hydra-core = "1.0.6"
 seaborn = "^0.11.2"
 pandas-profiling = "2.11.0"
 pyarrow = "^7.0.0"
 fastparquet = "^0.8.0"
 scikit-learn = "0.24.1"
 scipy = "1.6.1"
+importlib-resources = "^5.6.0"
 
 [tool.poetry.dev-dependencies]
 
