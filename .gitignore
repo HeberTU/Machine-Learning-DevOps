@@ -41,3 +41,7 @@
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/02-hyperparameter-optimization/outputs/
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/02-hyperparameter-optimization/random_forest/artifacts/
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/02-hyperparameter-optimization/random_forest/wandb/
+/02-building-reproducible-model-workflow/04-training-validation-experimentation/03-export-model -subpipeline/random_forest/artifacts/
+/02-building-reproducible-model-workflow/04-training-validation-experimentation/03-export-model -subpipeline/random_forest/wandb/
+/02-building-reproducible-model-workflow/04-training-validation-experimentation/03-export-model -subpipeline/mlruns/
+/02-building-reproducible-model-workflow/04-training-validation-experimentation/03-export-model -subpipeline/outputs/
