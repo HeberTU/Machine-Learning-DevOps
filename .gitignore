@@ -45,3 +45,6 @@
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/03-export-model -subpipeline/random_forest/wandb/
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/03-export-model -subpipeline/mlruns/
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/03-export-model -subpipeline/outputs/
+/02-building-reproducible-model-workflow/04-training-validation-experimentation/04-test-final-model/artifacts/
+/02-building-reproducible-model-workflow/04-training-validation-experimentation/04-test-final-model/mlruns/
+/02-building-reproducible-model-workflow/04-training-validation-experimentation/04-test-final-model/wandb/
