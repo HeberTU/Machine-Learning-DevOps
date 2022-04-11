@@ -27,6 +27,7 @@ scikit-learn = "0.24.1"
 scipy = "1.8.0"
 importlib-resources = "^5.6.0"
 cloudpickle = "2.0.0"
+aequitas = "0.42"
 
 [tool.poetry.dev-dependencies]
 
