@@ -1,0 +1,20 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python3 src/prepare.py
+    deps:
+    - path: data/fake_data.csv
+      md5: d555947986fee588b7495fcdbee9f4bc
+      size: 110
+    - path: src/prepare.py
+      md5: b5a5ee064d58e0a73c02ea63a867b747
+      size: 637
+    outs:
+    - path: data/X.csv
+      md5: 7d590865f797d0e66307c84bcbeb5f20
+      size: 475
+      isexec: true
+    - path: data/y.csv
+      md5: 8870354405a58d988cee938d17b8b147
+      size: 475
+      isexec: true
