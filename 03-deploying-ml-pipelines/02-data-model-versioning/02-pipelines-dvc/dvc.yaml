@@ -7,3 +7,15 @@ stages:
     outs:
     - data/X.csv
     - data/y.csv
+  train:
+    cmd: python3 src/train.py
+    deps:
+    - data/X.csv
+    - data/y.csv
+    - src/train.py
+    params:
+    - train.C
+    - train.random_state
+    - train.test_size
+    outs:
+    - models/model.pkl
