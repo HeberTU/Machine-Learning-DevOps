@@ -1,0 +1,42 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python3 src/prepare.py
+    deps:
+    - path: data/fake_data.csv
+      md5: d555947986fee588b7495fcdbee9f4bc
+      size: 110
+    - path: src/prepare.py
+      md5: b5a5ee064d58e0a73c02ea63a867b747
+      size: 637
+    outs:
+    - path: data/X.csv
+      md5: 7d590865f797d0e66307c84bcbeb5f20
+      size: 475
+      isexec: true
+    - path: data/y.csv
+      md5: 8870354405a58d988cee938d17b8b147
+      size: 475
+      isexec: true
+  train:
+    cmd: python3 src/train.py
+    deps:
+    - path: data/X.csv
+      md5: 7d590865f797d0e66307c84bcbeb5f20
+      size: 475
+    - path: data/y.csv
+      md5: 8870354405a58d988cee938d17b8b147
+      size: 475
+    - path: src/train.py
+      md5: 6efa94160f5779a97649c73903cbcf71
+      size: 854
+    params:
+      params.yaml:
+        train.C: 1.0
+        train.random_state: 23
+        train.test_size: 0.25
+    outs:
+    - path: models/model.pkl
+      md5: 8af6d24cb887a02087f929023437ce62
+      size: 683
+      isexec: true
