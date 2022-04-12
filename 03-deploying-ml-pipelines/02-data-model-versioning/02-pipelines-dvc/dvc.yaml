@@ -1,0 +1,9 @@
+stages:
+  prepare:
+    cmd: python3 src/prepare.py
+    deps:
+    - data/fake_data.csv
+    - src/prepare.py
+    outs:
+    - data/X.csv
+    - data/y.csv
