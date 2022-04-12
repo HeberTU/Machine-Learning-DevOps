@@ -2,3 +2,5 @@
     remote = localremote
 ['remote "localremote"']
     url = ../../local_remote_dvc
+['remote "driveremote"']
+    url = gdrive://1K0SxTtWdh5JjbkId7n1syftYzbBk_4f_
