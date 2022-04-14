@@ -49,3 +49,4 @@
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/04-test-final-model/mlruns/
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/04-test-final-model/wandb/
 /dvc-data.csv
+/scripts/wip/
