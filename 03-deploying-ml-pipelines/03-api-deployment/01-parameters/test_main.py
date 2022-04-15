@@ -17,7 +17,14 @@ from main import app
 
 client = TestClient(app)
 
+
 def test_order_item():
     response = client.get("/items/42?quantity=1")
     assert response.status_code == 200
     assert response.json() == {"item_id": 42, "quantity": 1}
+
+
+def test_bad_order_item():
+    response = client.get("/items/27?quantity=1")
+    assert response.status_code == 404
+    assert response.json() == {"message": "Forbidden Item."}
