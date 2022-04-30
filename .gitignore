@@ -50,3 +50,4 @@
 /02-building-reproducible-model-workflow/04-training-validation-experimentation/04-test-final-model/wandb/
 /dvc-data.csv
 /scripts/wip/
+/04-ml-model-scoring-monitoring/01-model-training-deployment/02-data-ingestion/result.csv
