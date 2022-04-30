@@ -29,6 +29,7 @@ importlib-resources = "^5.6.0"
 cloudpickle = "2.0.0"
 dvc = {extras = ["gdrive"], version = "^2.10.1"}
 fastapi = {extras = ["all"], version = "^0.75.1"}
+pandera = "^0.10.1"
 
 [tool.poetry.dev-dependencies]
 
