@@ -5,9 +5,11 @@ Created on: 9/5/22
 @author: Heber Trujillo <heber.trj.urt@gmail.com>
 Licence,
 """
-
+from pathlib import Path
 import pandas as pd
 
-ingested = pd.read_csv('samplefile.csv')
+ROOT_PATH = Path(__file__).resolve().parents[0]
 
-ingested.to_csv('samplefileingested.csv')
+ingested = pd.read_csv(ROOT_PATH / 'samplefile.csv')
+
+ingested.to_csv(ROOT_PATH / 'samplefileingested.csv', index=False)
